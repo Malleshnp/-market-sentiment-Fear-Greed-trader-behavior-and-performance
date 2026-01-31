@@ -1,0 +1,39 @@
+# -------------------------------
+# Python cache / environment
+# -------------------------------
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# -------------------------------
+# Jupyter / Colab
+# -------------------------------
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# -------------------------------
+# OS files
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+
+# ===============================
+# Data files (raw & large)
+# ===============================
+csv_files/*.csv
+csv_files/*.zip
+csv_files/*.parquet
+
+
+# -------------------------------
+# Logs & temp files
+# -------------------------------
+*.log
+*.tmp
+*.bak
+*.swp
