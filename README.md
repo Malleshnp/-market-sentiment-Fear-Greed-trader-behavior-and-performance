@@ -5,7 +5,10 @@
 This project analyzes how **market sentiment (Fear–Greed Index)** influences **trading behavior, risk, and performance** using trade-level data.
 The goal is to understand **behavioral patterns**, **risk asymmetry**, and **economic significance**, not just raw profitability.
 
-The analysis follows a **structured, end-to-end data science pipeline** covering data engineering, feature creation, behavioral analysis, and statistical inference.
+The goal is to interpret how sentiment shifts influence trader behavior,
+risk-taking, and participation patterns using a behavioral-finance lens.
+The focus is on regime-driven behavior rather than predictive modeling.
+
 
 ---
 
@@ -39,21 +42,29 @@ The project is organized into the following logical steps:
    * Long vs short bias
    * Account-level adaptability
 
-5. **Statistical Inference**
+5. Behavioral Regime Analysis
 
-   * Mann–Whitney U test (returns)
-   * Effect size (rank-biserial)
-   * Win-rate proportion tests
-   * Bootstrap confidence intervals
+   * Activity shifts across Fear vs Greed periods
+   * Liquidity surges during Extreme Fear
+   * Return dispersion changes across sentiment states
+   * Regime persistence and emotional asymmetry
+
 
 ---
 
 ## 📈 Key Findings (High Level)
 
-* **Fear regimes** show higher win rates and larger trade sizes, indicating cautious but higher-conviction trading.
-* **Greed regimes** generate slightly higher average returns through payoff asymmetry but expose traders to severe tail risk.
-* **Extreme Fear** is the most unstable regime, with the highest volatility and panic-driven losses.
-* Statistical tests confirm these differences are **robust but economically modest**, suggesting sentiment affects **behavior and risk** more than it provides a standalone trading edge.
+• Fear regimes are characterized by rapid participation increases and liquidity demand,
+  consistent with loss-aversion driven repositioning.
+
+• Greed regimes display slower but more persistent activity with wider payoff dispersion,
+  indicating risk-seeking behavior rather than improved decision accuracy.
+
+• Extreme Fear produces short-lived but intense market stress events,
+  while Greed regimes persist longer as optimism decays gradually.
+
+• Sentiment functions primarily as a risk-state indicator rather than a directional signal.
+
 
 Detailed results and interpretations are available in **`ds_report.pdf`**.
 
@@ -73,3 +84,4 @@ Detailed results and interpretations are available in **`ds_report.pdf`**.
 * The project is fully reproducible within Colab.
 
 ---
+This project should be read as a sentiment intelligence study rather than a predictive trading model.
